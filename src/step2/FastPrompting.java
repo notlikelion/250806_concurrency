@@ -47,7 +47,7 @@ public class FastPrompting {
                 .headers("Content-Type", "application/json",
                         "X-goog-api-key", GEMINI_API_KEY)
                 .POST(HttpRequest.BodyPublishers.ofString(
-                        template.formatted("%s(이)라는 주제로 한국어 실생활 문장을 50자 이내로 작성해주고, 과정없이 결과만 출력해주세요.".formatted(subject))
+                        template.formatted("%s(이)라는 주제로 한국어 실생활 문장을 꾸미는 문법(마크다운 등) 없이 평문으로 50자 이내로 작성해주고, 과정없이 문장 결과만 출력해주세요.".formatted(subject))
                 ))
                 .build();
         HttpResponse<String> response = client.send(
