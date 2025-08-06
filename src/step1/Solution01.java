@@ -44,8 +44,8 @@ public class Solution01 {
         // 로직
         // 프로세스 - 스레드
         try {
-//            Thread.sleep(random.nextInt(1000, 5000));
-            Thread.sleep(1000);
+            Thread.sleep(random.nextInt(1000, 1500));
+//            Thread.sleep(1000);
             // 현재 실행하고 있는 스레드 대기시킴
             // 1000ms ~ 4999ms
         } catch (Exception e) {
